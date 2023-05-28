@@ -1,0 +1,152 @@
+import Image from "next/image"
+import Matching from "@/public/images/puzzle.png"
+import Screening from "@/public/images/candidate.png"
+import Legal from "@/public/images/auction.png"
+import Education from "@/public/images/education.png"
+import Agency from "@/public/images/temporary-agency.png"
+import Communication from "@/public/images/networking.png"
+import Tracking from "@/public/images/track.png"
+import Support from "@/public/images/support.png"
+
+const Services = () => {
+    return (
+        <>
+            <div className="bg-sky-50 py-32">
+                <div className="w-9/12 mx-auto">
+                    <div className="text-center mb-12">
+                        <p className="text-5xl font-bold text-gray-600">
+                            Popular Services
+                        </p>
+                        <p className="text-gray-600 text-3xl">Building Bonds, Creating Miracles.</p>
+                    </div>
+                    <div>
+                        <div className="grid grid-cols-4 gap-10">
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Matching}
+                                    alt="matching"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Surrogate Matching
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Screening}
+                                    alt="screening"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Surrogate Screening
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Legal}
+                                    alt="legal"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Legal Support
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Education}
+                                    alt="educationn"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Surrogate Education
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Agency}
+                                    alt="agency"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Surrogacy Agency Coordination
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Communication}
+                                    alt="communication"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Communication Tools
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Tracking}
+                                    alt="tracking"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Surrogacy Journey Tracking
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                            >
+                                <Image
+                                    src={Support}
+                                    alt="support"
+                                    className="w-20 h-20 mx-auto"
+                                />
+                                <div className="space-y-2 text-center">
+                                    <p className="text-gray-700 text-lg font-semibold mb-3">
+                                        Support Network
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Services
