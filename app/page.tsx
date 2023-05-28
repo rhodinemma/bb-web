@@ -1,7 +1,17 @@
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Services from "./components/Services/Services";
+
 export default function Home() {
   return (
     <>
-      <h1>Baby Bridge</h1>
+      <main>
+        <Header />
+
+        <Hero />
+
+        <Services />
+      </main>
     </>
   )
 }
