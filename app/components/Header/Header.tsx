@@ -8,7 +8,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed w-full top-0 left-0 z-20 text-white backdrop-blur-sm bg-white-200/30 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+        <header className="fixed sm:w-full sm:top-0 sm:left-0 z-20 text-white backdrop-blur-sm bg-white-200/30 sm:flex-wrap sm:justify-between sm:items-center sm:px-4 sm:py-3">
             <div className="container mx-auto py-4 px-6 flex items-center justify-between">
                 <div className="flex items-center justify-between px-4 py-3 sm:p-0">
                     <div>
@@ -36,7 +36,7 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <nav className={`px-2 pt-2 pb-4 gap-10 sm:flex ${isOpen ? 'block' : 'hidden'}`}>
+                <nav className={`px-2 pt-2 pb-4 gap-10 sm:flex sm:flex-wrap hidden md:flex ${isOpen ? 'block' : 'hidden'}`}>
                     <a href="#" className="block px-2 py-1 bg-[#FFBF9B] text-black font-semibold text-2xl rounded hover:bg-[#FFBF9B] hover:text-black">
                         Home
                     </a>
