@@ -1,29 +1,31 @@
-import Image from "next/image"
-import Matching from "@/public/images/puzzle.png"
-import Screening from "@/public/images/candidate.png"
-import Legal from "@/public/images/auction.png"
-import Education from "@/public/images/education.png"
-import Agency from "@/public/images/temporary-agency.png"
-import Communication from "@/public/images/networking.png"
-import Tracking from "@/public/images/track.png"
-import Support from "@/public/images/support.png"
+import Image from "next/image";
+import Matching from "@/public/images/puzzle.png";
+import Screening from "@/public/images/candidate.png";
+import Legal from "@/public/images/auction.png";
+import Education from "@/public/images/education.png";
+import Agency from "@/public/images/temporary-agency.png";
+import Communication from "@/public/images/networking.png";
+import Tracking from "@/public/images/track.png";
+import Support from "@/public/images/support.png";
 
 const Services = () => {
     return (
         <>
-            <div className="bg-sky-50 py-32">
-                <div className="w-9/12 mx-auto">
-                    <div className="text-center mb-12">
-                        <p className="text-5xl font-bold text-gray-600">
+            <div className="bg-sky-50 py-16 md:py-32">
+                <div className="w-11/12 mx-auto">
+                    <div className="text-center mb-8 md:mb-12">
+                        <p className="text-3xl md:text-5xl font-bold text-gray-600">
                             Popular Services
                         </p>
-                        <p className="text-gray-600 text-3xl">Building Bonds, Creating Miracles.</p>
+                        <p className="text-gray-600 text-xl md:text-3xl">
+                            Building Bonds, Creating Miracles.
+                        </p>
                     </div>
                     <div>
-                        <div className="grid grid-cols-4 gap-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Matching}
@@ -38,7 +40,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Screening}
@@ -53,7 +55,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Legal}
@@ -68,7 +70,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Education}
@@ -83,7 +85,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Agency}
@@ -98,7 +100,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Communication}
@@ -113,7 +115,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Tracking}
@@ -128,7 +130,7 @@ const Services = () => {
                             </a>
                             <a
                                 href="#"
-                                className="p-4 bg-white w-48 shadow hover:shadow space-y-5 rounded-lg"
+                                className="p-4 bg-white w-full md:w-48 shadow hover:shadow space-y-5 rounded-lg"
                             >
                                 <Image
                                     src={Support}
@@ -146,7 +148,7 @@ const Services = () => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Services
+export default Services;
