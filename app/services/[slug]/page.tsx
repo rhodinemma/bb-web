@@ -73,11 +73,11 @@ const ServiceDetails = ({ params }: { params: { slug: string } }) => {
                 </header>
 
                 <section>
-                    <div className="container mx-auto py-8 mt-20">
+                    <div className="container mx-auto py-8 mt-20 px-10">
                         {foundService?.map((service) =>
                             <>
                                 <h1 className="text-5xl font-bold mb-4">{service.title}</h1>
-                                <div className="text-gray-700 text-2xl">
+                                <div className="text-gray-700 text-lg">
                                     <p className="mb-4">
                                         {service.description}
                                     </p>
