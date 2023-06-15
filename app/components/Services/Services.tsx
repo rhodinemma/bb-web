@@ -10,8 +10,8 @@ import Support from "@/public/images/support.png";
 
 const Services = () => {
     return (
-        <>
-            <div className="bg-sky-50 py-16 md:py-32">
+        <><section className="bg-sky-50">
+            <div className="container mx-auto py-16 md:py-32">
                 <div className="w-11/12 mx-auto">
                     <div className="text-center mb-8 md:mb-12">
                         <p className="text-3xl md:text-5xl font-bold text-gray-600">
@@ -147,6 +147,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+        </section>
         </>
     );
 };

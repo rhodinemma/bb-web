@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Banner from "@/public/images/banner.jpg"
+import Logo from "@/public/images/baby.png"
 
 const Hero = () => {
     return (
@@ -13,6 +14,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute inset-0 h-full w-full">
                     <div className={Classes.container}>
+                        <Image src={Logo} alt="BabyBridge" className={Classes.logo} width={200} height={200} />
                         <h1 className={Classes.heading}>
                             Baby Bridge
                         </h1>
@@ -36,10 +38,11 @@ const Hero = () => {
 export default Hero
 
 const Classes = {
-    container: "pb-8 pt-40 text-primary-dark px-4 lg:px-36 ",
-    heading: "tracking-wide text-7xl font-bold mb-6 text-center mt-20 text-white hover:text-[#FFBF9B] cursor-pointer",
+    container: "pb-8 pt-15 text-primary-dark px-4 lg:px-36 ",
+    heading: "tracking-wide text-7xl font-bold mb-6 text-center mt-3 text-white hover:text-[#FFBF9B] cursor-pointer",
     subheading: "text-center text-white mb-12 text-4xl cursor-pointer",
     button: "font-bold text-4xl mb-6 text-black text-center px-10 py-3 rounded-md bg-[#FFBF9B]",
     categoriesContainer:
         "flex flex-col lg:flex-row gap-8 justify-between items-center",
+    logo: "mx-auto"
 };
