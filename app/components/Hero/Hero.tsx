@@ -38,7 +38,7 @@ const Hero = () => {
 export default Hero
 
 const Classes = {
-    container: "pb-8 pt-15 text-primary-dark px-4 lg:px-36 ",
+    container: "pb-8 pt-20 text-primary-dark px-4 lg:px-36 ",
     heading: "tracking-wide text-7xl font-bold mb-6 text-center mt-3 text-white hover:text-[#FFBF9B] cursor-pointer",
     subheading: "text-center text-white mb-12 text-4xl cursor-pointer",
     button: "font-bold text-4xl mb-6 text-black text-center px-10 py-3 rounded-md bg-[#FFBF9B]",

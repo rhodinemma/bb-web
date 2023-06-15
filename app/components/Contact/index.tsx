@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react'
 
 const Contact = () => {
     return (
@@ -16,7 +18,7 @@ const Contact = () => {
                         </div>
                         <div>
                             <form>
-                                <div className="mb-4">
+                                <div className="mb-4 align-middle">
                                     <label htmlFor="firstName" className="block text-gray-700 font-medium mb-2">
                                         First Name
                                     </label>
