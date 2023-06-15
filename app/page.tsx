@@ -11,11 +11,11 @@ export default function Home() {
           <div className="container mx-auto flex items-center justify-between px-4">
             <h1 className="text-3xl text-black font-bold">Baby Bridge</h1>
             <a
-              href="https://playstore-link.com"
+              href="https://drive.google.com/uc?export=download&id=1zVqAKcR8GeDlUpqvMGg6Dt7zwGHiy6fc"
               className="flex items-center bg-white text-black py-2 px-4 rounded-md hover:bg-blue-100 transition duration-300"
             >
               <FaDownload className="mr-2" />
-              Download App Here
+              Download Application
             </a>
           </div>
         </header>
