@@ -76,7 +76,7 @@ const ServiceDetails = ({ params }: { params: { slug: string } }) => {
                     <div className="container mx-auto py-8 mt-20 px-10">
                         {foundService?.map((service) =>
                             <>
-                                <h1 className="text-5xl font-bold mb-4">{service.title}</h1>
+                                <h1 className="text-5xl font-bold mb-4 mt-10">{service.title}</h1>
                                 <div className="text-gray-700 text-lg">
                                     <p className="mb-4">
                                         {service.description}
@@ -87,7 +87,7 @@ const ServiceDetails = ({ params }: { params: { slug: string } }) => {
                     </div>
                 </section>
 
-                <footer className="bg-gray-300 py-4">
+                <footer className="bg-gray-300 py-4 px-8">
                     <div className="container mx-auto text-center">
                         <p>&copy; {new Date().getFullYear()} Baby Bridge. Makerere University School Project.</p>
                     </div>

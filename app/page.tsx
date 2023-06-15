@@ -27,7 +27,7 @@ export default function Home() {
 
         <Contact />
 
-        <footer className="py-4">
+        <footer className="py-4 px-8">
           <div className="container mx-auto text-center">
             <p>&copy; {new Date().getFullYear()} Baby Bridge. Makerere University School Project.</p>
           </div>
