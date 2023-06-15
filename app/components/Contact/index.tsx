@@ -3,6 +3,21 @@
 import React, { useState } from 'react'
 
 const Contact = () => {
+    const [sending, setSending] = useState(false)
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e: any) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
     return (
         <>
             <section className="bg-gray-200">
@@ -27,6 +42,8 @@ const Contact = () => {
                                         id="firstName"
                                         name="firstName"
                                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                                        value={formData.firstName}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -40,6 +57,8 @@ const Contact = () => {
                                         id="lastName"
                                         name="lastName"
                                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                                        value={formData.lastName}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -53,6 +72,8 @@ const Contact = () => {
                                         id="email"
                                         name="email"
                                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -66,17 +87,23 @@ const Contact = () => {
                                         name="message"
                                         rows={4}
                                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         required
                                     ></textarea>
                                 </div>
 
                                 <button
-                                    type="submit"
                                     className="font-bold text-2xl mb-6 text-black text-center px-10 py-3 rounded-md bg-[#FFBF9B] hover:bg-gray-400 transition duration-300"
+                                    onClick={() => setSending(true)}
                                 >
                                     Send Message
                                 </button>
                             </form>
+
+                            {sending && (
+                                <p>Message Sent Successfully</p>
+                            )}
                         </div>
                     </div>
                 </div>
