@@ -11,7 +11,7 @@ export default function Home() {
           <div className="container mx-auto flex items-center justify-between px-4">
             <h1 className="text-3xl text-black font-bold">Baby Bridge</h1>
             <a
-              href="https://drive.google.com/uc?export=download&id=1d_nbZRVObkyj_AyjIl-33MdPMAE2qlSHc"
+              href="https://drive.google.com/uc?export=download&id=1d_nbZRVObkyj_AyjIl-33MdPMAE2qlSH"
               className="flex items-center bg-[#FFBF9B] text-black py-2 px-4 rounded-md hover:bg-blue-100 transition duration-300"
             >
               <FaDownload className="mr-2" />
