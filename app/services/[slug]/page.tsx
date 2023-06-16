@@ -63,7 +63,7 @@ const ServiceDetails = ({ params }: { params: { slug: string } }) => {
                     <div className="container mx-auto flex items-left justify-between px-4">
                         <h1 className="text-3xl font-bold"><a href='/'>Baby Bridge</a> / Services / {params.slug}</h1>
                         <a
-                            href="https://drive.google.com/uc?export=download&id=1zVqAKcR8GeDlUpqvMGg6Dt7zwGHiy6fc"
+                            href="https://drive.google.com/uc?export=download&id=1d_nbZRVObkyj_AyjIl-33MdPMAE2qlSH"
                             className="flex items-center bg-[#FFBF9B] text-black py-2 px-4 rounded-md hover:bg-blue-100 transition duration-300"
                         >
                             <FaDownload className="mr-2" />
